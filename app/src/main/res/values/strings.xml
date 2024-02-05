@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ProjectOneApp</string>
+    <string name="save_button">Save Reminder</string>
+    <string name="next_button">Next Reminder</string>
+    <string name="previous_button">Previous Reminder</string>
+    <string name="complete_button">Complete</string>
+    <string name="add_button">Add Reminder</string>
+    <string name="added_toast">Added a new reminder!</string>
+    <string name="completed_toast">Reminder completed!</string>
+    <string name="checkmark_description">Image of a filled checkmark</string>
+    <string name="placeholder_text">Enter a new reminder</string>
 </resources>
