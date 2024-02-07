@@ -5,17 +5,31 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/design_default_color_secondary">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_reminder_title"
+        android:padding="48dp"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
     <EditText
         android:id="@+id/edit_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
         android:inputType="text"
-        android:hint="@string/placeholder_text"/>
+        android:hint="@string/placeholder_text"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
     <Button
         android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save_button"/>
+        android:text="@string/save_button"
+        android:layout_margin="48dp"
+        android:padding="24dp"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:textColor="@color/black"/>
 </LinearLayout>

@@ -9,4 +9,5 @@
     <string name="completed_toast">Reminder completed!</string>
     <string name="checkmark_description">Image of a filled checkmark</string>
     <string name="placeholder_text">Enter a new reminder</string>
+    <string name="add_new_reminder_title">Create a New Reminder</string>
 </resources>

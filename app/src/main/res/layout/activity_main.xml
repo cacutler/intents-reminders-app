@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/design_default_color_secondary">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/checkmark_description"
         android:src="@drawable/checkmark"
-        android:padding="24dp"
+        android:padding="48dp"
         android:layout_margin="24dp"/>
     <TextView
         android:id="@+id/reminder_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text=""/>
+        android:text=""
+        android:textSize="24sp"/>
     <Button
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_button"/>
+        android:text="@string/add_button"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:textColor="@color/black"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,16 +35,26 @@
             android:id="@+id/previous_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/previous_button"/>
+            android:text="@string/previous_button"
+            android:layout_margin="12dp"
+            android:backgroundTint="@color/design_default_color_on_primary"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next_button"/>
+            android:text="@string/next_button"
+            android:layout_margin="12dp"
+            android:backgroundTint="@color/design_default_color_on_primary"
+            android:textColor="@color/black"/>
     </LinearLayout>
     <Button
         android:id="@+id/complete_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/complete_button"/>
+        android:text="@string/complete_button"
+        android:padding="24dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:textColor="@color/black"/>
 </LinearLayout>
