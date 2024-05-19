@@ -18,10 +18,6 @@ class MainActivityTest {
     fun setUp() {
         scenario = launch(MainActivity::class.java)
     }
-    @After
-    fun tearDown() {
-        scenario.close()
-    }
     @Test
     fun showsDefaultReminderOnLaunch() {
         onView(withId(R.id.reminder_text_view)).check(matches(withText("Default Reminder")))
@@ -30,5 +26,9 @@ class MainActivityTest {
     fun goesToActivityView() {
         onView(withId(R.id.add_button)).perform(click())
         onView(withId(R.id.save_button)).check(matches(withText(R.string.save_button)))
+    }
+    @After
+    fun tearDown() {
+        scenario.close()
     }
 }
