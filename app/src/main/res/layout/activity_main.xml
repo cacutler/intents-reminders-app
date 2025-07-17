@@ -3,9 +3,9 @@
     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/checkmark_description" android:src="@drawable/checkmark" android:padding="48dp" android:layout_margin="24dp"/>
     <TextView android:id="@+id/reminder_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="24dp" android:text="" android:textSize="24sp"/>
     <Button android:id="@+id/add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_button" android:layout_margin="24dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
-    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-        <Button android:id="@+id/previous_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/previous_button" android:layout_margin="12dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
-        <Button android:id="@+id/next_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_button" android:layout_margin="12dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
+    <LinearLayout style="?android:attr/buttonBarStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/previous_button" style="?android:attr/buttonBarButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/previous_button" android:layout_margin="12dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
+        <Button android:id="@+id/next_button" style="?android:attr/buttonBarButtonStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_button" android:layout_margin="12dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
     </LinearLayout>
     <Button android:id="@+id/complete_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete_button" android:padding="24dp" android:layout_margin="12dp" android:backgroundTint="@color/design_default_color_on_primary" android:textColor="@color/black"/>
 </LinearLayout>
