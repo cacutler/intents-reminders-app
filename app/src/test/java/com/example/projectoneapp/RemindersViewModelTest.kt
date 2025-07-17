@@ -1,6 +1,5 @@
 package com.example.projectoneapp
 import androidx.lifecycle.SavedStateHandle
-import layout.Reminder
 import org.junit.Assert.assertEquals
 import org.junit.Test
 class RemindersViewModelTest {

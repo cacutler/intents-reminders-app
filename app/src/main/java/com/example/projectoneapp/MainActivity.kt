@@ -7,13 +7,10 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.projectoneapp.databinding.ActivityMainBinding
 import androidx.activity.viewModels
-import layout.Reminder
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val remindersViewModel: RemindersViewModel by viewModels()
-    private val addLauncher = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) { result ->
+    private val addLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val reminderText = result.data?.getStringExtra(EXTRA_REMINDER_RESULT)
             val newReminder = Reminder(reminderText)
