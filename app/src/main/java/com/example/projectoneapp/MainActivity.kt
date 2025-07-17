@@ -10,7 +10,7 @@ import androidx.activity.viewModels
 class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val remindersViewModel: RemindersViewModel by viewModels()
-    private val addLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+    private val addLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val reminderText = result.data?.getStringExtra(EXTRA_REMINDER_RESULT)
             val newReminder = Reminder(reminderText)
