@@ -1,5 +1,4 @@
 package com.example.projectoneapp
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,7 +10,7 @@ class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val remindersViewModel: RemindersViewModel by viewModels()
     private val addLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {result ->
-        if (result.resultCode == Activity.RESULT_OK) {
+        if (result.resultCode == RESULT_OK) {
             val reminderText = result.data?.getStringExtra(EXTRA_REMINDER_RESULT)
             val newReminder = Reminder(reminderText)
             remindersViewModel.addReminder(newReminder)

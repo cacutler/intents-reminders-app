@@ -3,7 +3,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 const val CURRENT_INDEX_KEY = "CURRENT_INDEX_KEY"
 class RemindersViewModel(private val savedStateHandle: SavedStateHandle): ViewModel() {
-    private val reminderBank = mutableListOf<Reminder>(Reminder("Default Reminder"))
+    private val reminderBank = mutableListOf(Reminder("Default Reminder"))
     private var currentIndex: Int get() = savedStateHandle[CURRENT_INDEX_KEY] ?: 0
         set(value) = savedStateHandle.set(CURRENT_INDEX_KEY, value)
     fun moveToNext() {

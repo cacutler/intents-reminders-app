@@ -1,5 +1,4 @@
 package com.example.projectoneapp
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -23,7 +22,7 @@ class AddActivity: ComponentActivity() {
         val data = Intent().apply {
             putExtra(EXTRA_REMINDER_RESULT, newReminderText)
         }
-        setResult(Activity.RESULT_OK, data)
+        setResult(RESULT_OK, data)
     }
     companion object {
         fun newIntent(packageContext: Context): Intent {
